@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MongoConfiguration">
+    <option name="serverConfigurations">
+      <list>
+        <ServerConfiguration>
+          <option name="authenticationDatabase" value="admin" />
+          <option name="authenticationMechanism" value="SCRAM-SHA-1" />
+          <option name="password" value="AAG2018" />
+          <option name="serverUrls">
+            <list>
+              <option value="cluster0-shard-00-00-tomfu.mongodb.net:27017" />
+            </list>
+          </option>
+          <option name="sshTunnelingConfiguration">
+            <SshTunnelingConfiguration />
+          </option>
+          <option name="sslConnection" value="true" />
+          <option name="userDatabase" value="AutoAirGroupdb" />
+          <option name="username" value="devUser" />
+        </ServerConfiguration>
+      </list>
+    </option>
+  </component>
+</project>
