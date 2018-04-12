@@ -8,7 +8,6 @@ app = Flask(__name__)
 from dao.users import UsersDao
 call = UsersDao().getAllUsers()
 insert = UsersDao().insertUser()
-call = UsersDao().getAllUsers()
 ##END OF TEST SNIPPET
 
 @app.route('/')
