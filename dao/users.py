@@ -16,21 +16,22 @@ class UsersDao:
     def insertUser(self):
         address = [
             {
-                'city:' "Guaynabo",
-                'place:' "Villa Avila",
-                'street' "A-29 Humacao",
+                'city:' "Rincon",
+                'place:' "Urb Esteves",
+                'street' "Calle Cipreses",
                 'zipcode' "00969"
             }
         ]
 
         newUser = [
-            'user_fname:' "Jaime",
-            'user_lname:' "Cortes",
-            'username:' "jcd1",
+            'user_fname:' "Juan",
+            'user_lname:' "DelPueblo",
+            'username:' "jdp",
             'usertype:' "admin",
-            'user_email:' "jaime.cortes@gmail.com",
-            'user_password:' "jcd123",
-            'user_address:', json.dumps(address),
+            'user_email:' "jdp@gmail.com",
+            'user_password:' "jdp123",
+            #'user_address:', json.dumps(address),
             'user_phone:' '7875555555'
         ]
+        self.db.insert_once(newUser)
         print("Okay")
