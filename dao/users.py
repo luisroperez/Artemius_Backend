@@ -31,5 +31,4 @@ class UsersDao:
             "user_address": address,
             "user_phone": 7871234567
         }
-        self.db.insert_one(newUser)
-        print("Okay")
+        self.db.insert_one(newUser).inserted_id
