@@ -4,9 +4,12 @@ from config.dbconfig import client
 app = Flask(__name__)
 #mongo = PyMongo(app)
 
-db = client.AutoAirGroupdb
-for doc in db.orders.find():
-    print(doc)
+##TEST SNIPPET
+from dao.users import UsersDao
+call = UsersDao().getAllUsers()
+insert = UsersDao().insertUser()
+call = UsersDao().getAllUsers()
+##END OF TEST SNIPPET
 
 @app.route('/')
 def test():
